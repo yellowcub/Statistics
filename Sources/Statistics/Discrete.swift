@@ -177,31 +177,31 @@ public class Binomial: DiscreteDistribution {
     }
 }
 
-public class CustomDiscrete<ValueContainer>: DiscreteDistribution
-    where ValueContainer: RandomAccessCollection, ValueContainer.Index == Int, ValueContainer.Element: Comparable {
-
-    let min = 0
-    var max: Int { return values.count - 1 }
-
+public class CustomDiscrete<T>: DiscreteDistribution where T: Hashable {
     /// The explicit distribution of probabilities in this distrbution,
     /// with probabilities associated with their zero-based index.
-    let values: ValueContainer
+    public let values: [T]
+    public var pmf: [Double] = []
     
-    public init(_ list: ValueContainer) {
-		values = list
-	}
+    public init(_ list: [T]) {
+		values = Array(Set(list))
 
-    public var pmf: [Double] { 
-        let c = Double(values.count)
+        let c = Double(list.count)
         var pmf: [Double] = []
 		for v in values {
-			let p: Double = values.reduce(Double(0)){ base, nextElement in
+			let p: Double = list.reduce(Double(0)){ base, nextElement in
                 base + (nextElement == v ? 1.0 : 0.0)
             }
 			pmf.append(p / c)
 		}
-        return pmf
-    }
+	}
+
+    public init<U>(_ list: [T], withWeightedMass mWeight: [U]) where U: BinaryFloatingPoint {
+		self.values = list
+        let p = mWeight.reduce(0.0, +)
+        self.pmf = mWeight.map(){ Double($0 / p) }
+	}
+
 
     public var cdf: [Double] {
         let c = pmf.reduce(into: []) { base, nextElement in
@@ -210,7 +210,7 @@ public class CustomDiscrete<ValueContainer>: DiscreteDistribution
         return c.map(){ element in element / c.last! }
     }
     
-    public func quantile(_ p: Double) -> ValueContainer.Element {
+    public func quantile(_ p: Double) -> T {
         let index = cdf.reduce(0) { $0 + ($1 < p ? 1 : 0) }
 		return values[index]
     }
