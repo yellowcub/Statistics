@@ -1,8 +1,7 @@
 import Foundation
 
 /**
-Calculate `n!` for values of `n` that conform to the BinaryInteger
-protocol.  Returns `nil` if `n` is less than zero.
+Calculate `n!` for values of `n` that conform to the BinaryInteger protocol.
 */
 func factorial<T>(_ n: T) -> T where T: BinaryInteger {
     assert(n > 0, "Attempted to pass non-positive integer into StatisticalDistribution.factorial()")
@@ -10,8 +9,13 @@ func factorial<T>(_ n: T) -> T where T: BinaryInteger {
 }
 
 /**
-Calculate n-choose-k for values of `n` and `k` that conform to the BinaryInteger
-protocol.
+Calculate n-choose-k for values of `n` and `k` that conform to the BinaryInteger protocol.
+
+- Parameters:
+    - `n`: Number of items to choose from.
+    - `k: number of items chosen.
+
+- Returns: The number of possible unique selections of `k` items from `n`.
 */
 func choose<T>(n: T, k: T) -> T where T: BinaryInteger {
     assert(k < n, "In StatisticalDistribution.choose(n: k: ) n must be larger than k")
@@ -25,8 +29,7 @@ BinaryFloatingPoint protocol (e.g Float, Double).
 - Parameters:
     - data: Array of values
 
-- Returns:
-The mean of the array of values or `nil` if the array was empty.
+- Returns: The mean of the array of values or `nil` if the array was empty.
 */
 func mean<T>(_ data: [T]) -> T where T: BinaryFloatingPoint {
     assert(!data.isEmpty, "Attempted to pass empty array into StatisticalDistribution.mean()")
@@ -38,11 +41,9 @@ Calculates the unbiased sample variance for an array for types that satisfy
 the BinaryFloatingPoint protocol (e.g Float, Double).
 
 - Parameters:
-    - data:
-    Sample of values.  Note that this should contain at least two values.
+    - data: Sample of values.  Note that this should contain at least two values.
 
-- Returns:
-    The unbiased sample variance or `nil` if `data` contains fewer than two
+- Returns: The unbiased sample variance or `nil` if `data` contains fewer than two
     values.
 */
 func variance<T>(_ data: [T]) -> T where T: BinaryFloatingPoint {
@@ -62,11 +63,9 @@ Calculates the unbiased sample standard deviation for an array of values
 for types that satisfy the BinaryFloatingPoint protocol (e.g Float, Double).
 
 - Parameters:
-    - data:
-    Sample of values.  Note that this should contain at least two values.
+    - data: Sample of values.  Note that this should contain at least two values.
 
-- Returns:
-    The sample unbiased standard deviation or `nil` if `data` contains fewer
+- Returns: The sample unbiased standard deviation or `nil` if `data` contains fewer
     than two values.
 */
 func standardDeviation<T>(_ data: [T]) -> T where T: BinaryFloatingPoint {
@@ -80,11 +79,9 @@ Calculates the population variance for an array of values for types that
 satisfy the BinaryFloatingPoint protocol (e.g Float, Double).
 
 - Parameters:
-    - data:
-    Values of population.  Note that this should contain at least one value.
+    - data: Values of population.  Note that this should contain at least one value.
 
-- Returns:
-The population variance or `nil` if `data` contains fewer than one value.
+- Returns: The population variance or `nil` if `data` contains fewer than one value.
 */
 func pvariance<T>(_ data: [T]) -> T where T: BinaryFloatingPoint {
     let n = data.count
@@ -103,11 +100,9 @@ Calculates the median of an array of values for types that
 satisfy the BinaryFloatingPoint protocol (e.g Float, Double).
 
 - Parameters:
-    - data:
-    Values of population.  Note that this should contain at least one value.
+    - data: Values of population.  Note that this should contain at least one value.
 
-- Returns:
-The population variance or `nil` if `data` contains fewer than one value.
+- Returns: The population variance or `nil` if `data` contains fewer than one value.
 */
 func median<T>(_ data: [T]) -> T where T: BinaryFloatingPoint {
     assert(!data.isEmpty, "Attempted to pass empty array into StatisticalDistribution.median()")
@@ -149,6 +144,16 @@ func erfinv<T>(_ y: T, withPrecision epsilon: Double = 1e-7) -> T where T: Binar
     return T(x) 
 }
 
+/**
+Calculates a least squares regression for `x` & `y` data sets that
+satisfy the BinaryFloatingPoint protocol (e.g Float, Double).
+
+- Parameters:
+    - 'x': Independent data.
+    - `y`: Dependent data.
+
+- Returns: The slope and intercept for the best lsr line fit.
+*/
 func lsr<T>(x: [T], y: [T]) -> (slope: T, intercept: T) where T: BinaryFloatingPoint {
     assert(x.count == y.count && x.count > 1, "In StatisticalDistribution.lsr(x: y: ) the size of x and y must be the same and greater than 1.")
     
