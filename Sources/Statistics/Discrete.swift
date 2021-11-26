@@ -187,11 +187,11 @@ public class CustomDiscrete<ValueContainer>: DiscreteDistribution
     /// with probabilities associated with their zero-based index.
     let values: ValueContainer
     
-    init(_ list: ValueContainer) {
+    public init(_ list: ValueContainer) {
 		values = list
 	}
 
-    var pmf: [Double] { 
+    public var pmf: [Double] { 
         let c = Double(values.count)
         var pmf: [Double] = []
 		for v in values {
@@ -203,7 +203,7 @@ public class CustomDiscrete<ValueContainer>: DiscreteDistribution
         return pmf
     }
 
-    var cdf: [Double] {
+    public var cdf: [Double] {
         let c = pmf.reduce(into: []) { base, nextElement in
             base.append((base.last ?? 0) + nextElement)
         }

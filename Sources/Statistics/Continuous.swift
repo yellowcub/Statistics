@@ -294,10 +294,10 @@ public class Uniform<T>: ContinuousDistribution where T: BinaryFloatingPoint {
 public class CustomRanked<T>: ContinuousDistribution where T: BinaryFloatingPoint {
     /// The explicit distribution of probabilities in this distrbution,
     /// with probabilities associated with their zero-based index.
-    let values: [T]
-    let cdf: [Double]
+    public let values: [T]
+    public let cdf: [Double]
     
-    init(_ list: [T], withRange range: ClosedRange<T>) {
+    public init(_ list: [T], withRange range: ClosedRange<T>) {
 		let v = list.filter({ element in range.contains(element) }).sorted(by: <)
 		values = [range.lowerBound] + v + [range.upperBound]
 		
