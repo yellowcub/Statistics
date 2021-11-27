@@ -328,8 +328,9 @@ public class CustomRanked<T>: ContinuousDistribution where T: BinaryFloatingPoin
     }
     
     public func quantile(_ p: Double) -> T {
-        let index = cdf.reduce(0) { $0 + ($1 < p ? 1 : 0) }
-		return values[index]
+        let index = cdf.reduce(-1) { $0 + ($1 < p ? 1 : 0) }
+		let ratio = (p - cdf[index]) / (cdf[index + 1] - cdf[index])
+		return  values[index] * T(1.0 - ratio) + values[index + 1] * T(ratio)
     }
 
 }
