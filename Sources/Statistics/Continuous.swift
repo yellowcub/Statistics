@@ -307,6 +307,25 @@ public class CustomRanked<T>: ContinuousDistribution where T: BinaryFloatingPoin
         }
 		cdf = [0.0] + c + [1.0]
     }
+
+    public init(_ list: [T], withWeightedDensity pWeight: [Double], withRange range: ClosedRange<T>) {
+		let sortedIndices = list.enumerated()
+                    .sorted(by: < )
+                    .map() { $0.offset }
+        var v = sortedIndices.map(){ i in list[i] }
+        var u = sortedIndices.map(){ i in pWeight[i] }
+        
+        let filteredIndices = v.enumerated()
+                    .filter(){ (i, e) in range.contains(e) }
+                    .map() { $0.offset }
+        v = filteredIndices.map(){ i in v[i] }
+        u = filteredIndices.map(){ i in u[i] }
+
+        values = [range.lowerBound] + v + [range.upperBound]
+
+        let cdfUnscaled = u.reduce(into: []) { $0.append(($0.last ?? 0) + $1) }
+        cdf = [0.0] + cdfUnscaled.map() { $0 / cdfUnscaled.last! } + [1.0]
+    }
     
     public func quantile(_ p: Double) -> T {
         let index = cdf.reduce(0) { $0 + ($1 < p ? 1 : 0) }
