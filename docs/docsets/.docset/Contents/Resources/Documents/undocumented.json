@@ -1,0 +1,495 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 9,
+      "symbol": "ContinuousDistribution.FType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 10,
+      "symbol": "ContinuousDistribution.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 54,
+      "symbol": "Laplace",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 58,
+      "symbol": "Laplace.init(mean:b:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 63,
+      "symbol": "Laplace.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 74,
+      "symbol": "Laplace.pdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 78,
+      "symbol": "Laplace.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 87,
+      "symbol": "Laplace.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 96,
+      "symbol": "Exponential",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 98,
+      "symbol": "Exponential.init(l:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 102,
+      "symbol": "Exponential.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 108,
+      "symbol": "Exponential.pdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 112,
+      "symbol": "Exponential.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 116,
+      "symbol": "Exponential.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 122,
+      "symbol": "Weibull",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 127,
+      "symbol": "Weibull.init(scale:shape:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 132,
+      "symbol": "Weibull.pdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 137,
+      "symbol": "Weibull.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 142,
+      "symbol": "Weibull.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 148,
+      "symbol": "Normal",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 155,
+      "symbol": "Normal.init(m:v:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 160,
+      "symbol": "Normal.init(mean:sd:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 167,
+      "symbol": "Normal.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 175,
+      "symbol": "Normal.pdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 179,
+      "symbol": "Normal.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 183,
+      "symbol": "Normal.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 246,
+      "symbol": "LogNormal.pdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 250,
+      "symbol": "LogNormal.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 254,
+      "symbol": "LogNormal.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 261,
+      "symbol": "Uniform",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 267,
+      "symbol": "Uniform.init(a:b:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 272,
+      "symbol": "Uniform.pdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 280,
+      "symbol": "Uniform.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 288,
+      "symbol": "Uniform.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 294,
+      "symbol": "CustomRanked",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 298,
+      "symbol": "CustomRanked.cdf",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 300,
+      "symbol": "CustomRanked.init(_:withRange:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 311,
+      "symbol": "CustomRanked.init(_:withWeightedDensity:withRange:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Continuous.swift",
+      "line": 330,
+      "symbol": "CustomRanked.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 9,
+      "symbol": "DiscreteDistribution.Value",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 10,
+      "symbol": "DiscreteDistribution.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 56,
+      "symbol": "Bernoulli",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 59,
+      "symbol": "Bernoulli.init(p:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 63,
+      "symbol": "Bernoulli.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 68,
+      "symbol": "Bernoulli.pmf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 74,
+      "symbol": "Bernoulli.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 81,
+      "symbol": "Bernoulli.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 89,
+      "symbol": "Poisson",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 91,
+      "symbol": "Poisson.init(m:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 95,
+      "symbol": "Poisson.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 100,
+      "symbol": "Poisson.pmf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 104,
+      "symbol": "Poisson.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 112,
+      "symbol": "Poisson.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 124,
+      "symbol": "Geometric",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 126,
+      "symbol": "Geometric.init(p:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 130,
+      "symbol": "Geometric.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 135,
+      "symbol": "Geometric.pmf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 139,
+      "symbol": "Geometric.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 143,
+      "symbol": "Geometric.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 148,
+      "symbol": "Binomial",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 151,
+      "symbol": "Binomial.init(n:p:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 156,
+      "symbol": "Binomial.pmf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 161,
+      "symbol": "Binomial.cdf(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 169,
+      "symbol": "Binomial.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 180,
+      "symbol": "CustomDiscrete",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 184,
+      "symbol": "CustomDiscrete.pmf",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 186,
+      "symbol": "CustomDiscrete.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 199,
+      "symbol": "CustomDiscrete.init(_:withWeightedMass:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 206,
+      "symbol": "CustomDiscrete.cdf",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mortarsa/Developer/GitHub/Statistics/Sources/Statistics/Discrete.swift",
+      "line": 213,
+      "symbol": "CustomDiscrete.quantile(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/mortarsa/Developer/GitHub/Statistics"
+}
