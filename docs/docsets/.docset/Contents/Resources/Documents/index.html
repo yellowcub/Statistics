@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (18% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Bernoulli.html">Bernoulli</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Binomial.html">Binomial</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CustomDiscrete.html">CustomDiscrete</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CustomRanked.html">CustomRanked</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Exponential.html">Exponential</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Geometric.html">Geometric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Laplace.html">Laplace</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LogNormal.html">LogNormal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Normal.html">Normal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Poisson.html">Poisson</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Uniform.html">Uniform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Weibull.html">Weibull</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/ContinuousDistribution.html">ContinuousDistribution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DiscreteDistribution.html">DiscreteDistribution</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='statistics' class='heading'>Statistics</h1>
+
+<p>Statistics for Swift &mdash; v0.1</p>
+
+<p>A custom implementation of <a href="http://r0fls.github.io/swiftstats/">GitHub site</a> with the purpose of streamlining access to built-in functions and classes.  This is starting out as a personal project to facilitate the authors needs and intersts.</p>
+<h2 id='features' class='heading'>Features</h2>
+<h3 id='base-functions' class='heading'>Base Functions</h3>
+
+<ul>
+<li>factorial</li>
+<li>choose (nCk)</li>
+<li>median</li>
+<li>mean</li>
+<li>variance</li>
+<li>standard deviation</li>
+<li>erf<sup>-1</sup> (implemented as <code>erfinv</code>, whereas <code>erf</code> is implemented as part of <code>Foundation</code>)</li>
+<li>least squares regression; lsr ([[<code>Double</code>]]) -&gt; [<code>Double</code>, <code>Double</code>]</li>
+</ul>
+<h3 id='discrete-distributions' class='heading'>Discrete Distributions</h3>
+
+<ul>
+<li>Bernoulli</li>
+<li>Poisson</li>
+<li>Geometric</li>
+<li>Binomial</li>
+<li>CustomDiscrete (new)</li>
+</ul>
+<h3 id='continuous-distributions' class='heading'>Continuous Distributions</h3>
+
+<ul>
+<li>Normal</li>
+<li>Log-normal</li>
+<li>Laplace</li>
+<li>Weibull (new)</li>
+<li>Exponential</li>
+<li>CustomRanked (new, needs pdf implementation)</li>
+</ul>
+
+<p>And each distribution has these methods:</p>
+
+<ul>
+<li>pmf or pdf</li>
+<li>cdf</li>
+<li>quantile</li>
+<li>random (takes an optional int and returns an array of that length, or otherwise a single value)</li>
+</ul>
+<h2 id='testing' class='heading'>Testing</h2>
+
+<p>Run <code>swift test</code> from the base directory in a terminal window.</p>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>If you would like to contribute, please submit a pull request, or raise an issue.</p>
+<h3 id='to-do' class='heading'>TO-DO</h3>
+<h2 id='license' class='heading'>License</h2>
+
+<p>All code that I created in this repository (which is everything that was not generated by Xcode from a template, including the main source and the Unit Tests) is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, which means that it is part of the public domain and you can do anything with it, without asking permission.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2021-12-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
