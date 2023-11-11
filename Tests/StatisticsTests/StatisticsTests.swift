@@ -7,6 +7,16 @@ class StatisticsTests: XCTestCase {
 
     func testFunctions() throws {
         /// Test factorial()
+        XCTAssertEqual(factorial(0), 1, "Failed factorial check.")
+        XCTAssertEqual(factorial(1), 1, "Failed factorial check.")
+        XCTAssertEqual(factorial(2), 2, "Failed factorial check.")
+        XCTAssertEqual(factorial(3), 6, "Failed factorial check.")
+        XCTAssertEqual(factorial(4), 24, "Failed factorial check.")
+        XCTAssertEqual(factorial(5), 120, "Failed factorial check.")
+        XCTAssertEqual(factorial(6), 720, "Failed factorial check.")
+        XCTAssertEqual(factorial(7), 5_040, "Failed factorial check.")
+        XCTAssertEqual(factorial(8), 40_320, "Failed factorial check.")
+        XCTAssertEqual(factorial(9), 362_880, "Failed factorial check.")
         XCTAssertEqual(factorial(10), 3_628_800, "Failed factorial check.")
         
         /// Test choose()
