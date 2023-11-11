@@ -5,7 +5,8 @@ Calculate `n!` for values of `n` that conform to the BinaryInteger protocol.
 */
 func factorial<T>(_ n: T) -> T where T: BinaryInteger {
     assert(n > 0, "Attempted to pass non-positive integer into StatisticalDistribution.factorial()")
-    return T(tgamma(Double(n+1)))
+    n == 0 ? return 1 : return n * factorial(n - 1)
+    // return T(tgamma(Double(n+1))) /TO-DO This method seems inconsistent across machines
 }
 
 /**
